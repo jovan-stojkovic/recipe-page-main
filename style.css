@@ -1,42 +1,101 @@
-/* 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); } */
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
-# Front-end Style Guide
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
 
-## Layout
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400, 600, 700;
+  font-style: normal;
+}
 
-The designs were created to the following widths:
+:root {
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
 
-- Mobile: 375px
-- Desktop: 1440px
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-## Colors
+main {
+  background-color: var(--Eggshell);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-### Primary
+.container {
+  width: 800px;
+  background-color: white;
+  padding: 40px;
+  margin-top: 100px;
+  border-radius: 30px;
+}
 
-- Nutmeg: hsl(14, 45%, 36%)
-- Dark Raspberry: hsl(332, 51%, 32%)
+.img-container {
+  background-image: url(./assets/images/image-omelette.jpeg);
+  height: 329px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 10px;
+}
 
-### Neutral
+h1 {
+  font-family: "Young Serif", serif;
+  color: var(--Dark-Charcoal);
+  margin: 30px 0;
+  font-size: 40px;
+}
 
-- White: hsl(0, 0%, 100%)
-- Rose White: hsl(330, 100%, 98%)
-- Eggshell: hsl(30, 54%, 90%)
-- Light Grey: hsl(30, 18%, 87%)
-- Wenge Brown: hsl(30, 10%, 34%)
-- Dark Charcoal: hsl(24, 5%, 18%)
+p {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: var(--Dark-Charcoal);
+}
 
-## Typography
+.pink-container {
+    background-color: var(--Rose-White);
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
 
-### Body Copy
+h3 {
+    color: var(--Dark-Raspberry);
+    font-family: "Outfit", sans-serif;
+font-size: 20px;
+margin-bottom: 20px;
+}
 
-- Font size (paragraph): 16px
+ul {
+    list-style-position: inside;
+    color: var(--Dark-Raspberry)
+}
 
-### Fonts
+span {
+    font-weight: 600;
+}
 
-- Family: [Young Serif](https://fonts.google.com/specimen/Young+Serif)
-- Weights: 400
-
-- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
-- Weights: 400, 600, 700
+li {
+    color: var(--Dark-Charcoal);
+    font-family: "Outfit", sans-serif;
+    line-height: 30px;
+}
